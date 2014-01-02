@@ -4,9 +4,9 @@ import net.minecraft.block.Block;
 import net.minecraft.block.material.Material;
 import net.minecraft.item.ItemStack;
 import EDM.edm.main.handler.enums.EnumToolMaterials;
-import EDM.edm.main.items.tools.ItemToolBlack;
+import EDM.edm.main.items.tools.ItemToolMain;
 
-public class ItemAxeBlack extends ItemToolBlack{
+public class ItemAxeMain extends ItemToolMain{
 
 	private static Block[] blocksEffectiveAgainst = new Block[] 
 	{
@@ -20,7 +20,7 @@ public class ItemAxeBlack extends ItemToolBlack{
 		Block.pumpkinLantern
 	};
 	
-	public ItemAxeBlack(int par1, EnumToolMaterials par2EnumToolMaterial)
+	public ItemAxeMain(int par1, EnumToolMaterials par2EnumToolMaterial)
 	{
          super(par1, 3, par2EnumToolMaterial, blocksEffectiveAgainst);
 	}

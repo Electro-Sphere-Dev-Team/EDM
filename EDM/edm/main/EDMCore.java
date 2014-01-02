@@ -30,7 +30,7 @@ public class EDMCore extends DummyModContainer
 	@Instance("EDMCore")
 	public EDMCore instance;
 	
-	@SidedProxy(clientSide="abqzach3.edm.main.client.ClientProxy")
+	@SidedProxy(clientSide="EDM.edm.main.client.ClientProxy")
 	public static ClientProxy proxy;
 	
 	@EventHandler

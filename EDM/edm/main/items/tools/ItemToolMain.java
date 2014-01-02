@@ -9,14 +9,14 @@ import net.minecraft.item.ItemStack;
 import net.minecraft.world.World;
 import EDM.edm.main.handler.enums.EnumToolMaterials;
 
-public class ItemToolBlack extends Item{
+public class ItemToolMain extends Item{
 
 	private Block[] blocksEffectiveAgainst;
 	protected float efficiencyOnProperMaterial = 4.0F;
 	private float damageVsEntity;
 	protected EnumToolMaterials toolMaterial;
 	
-	protected ItemToolBlack(int par1, int par2, EnumToolMaterials par3EnumToolMaterial, Block[] par4ArrayOfBlock)
+	protected ItemToolMain(int par1, int par2, EnumToolMaterials par3EnumToolMaterial, Block[] par4ArrayOfBlock)
 	{
          super(par1);
          this.toolMaterial = par3EnumToolMaterial;

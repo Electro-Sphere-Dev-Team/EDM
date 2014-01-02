@@ -21,15 +21,7 @@ public class ClientProxy
 	}
 	public static boolean HandleAddons()
 	{
-		if(Loader.isModLoaded("BetterTable"))
-		{
-			return true;
-			
-		}else{
-			
-			return false;
-		}
-		
+		if(Loader.isModLoaded("BetterTable")) return true; else return false;
 	}
 	
 	public static void HandleBlock()
