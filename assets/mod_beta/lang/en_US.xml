@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE properties SYSTEM "http://java.sun.com/dtd/properties.dtd">
+<properties version="1.0">
+	<comment>English (en_US) Localization File</comment>
+	<!--	<entry key="tile.XXX.name">XXX</entry> -->
+<entry key = "tile.null.Black.name">Black Diamond Block</entry>
+<entry key = "tile.null.Blue.name" >Blue Diamond Block</entry>
+<entry key = "tile.null.Gold.name">Gold Diamond Block</entry>
+<entry key = "tile.null.Grey.name">Gray Diamond Block</entry>
+<entry key = "tile.null.Green.name">Green Diamond Block</entry>
+<entry key = "tile.null.Orange.name">Orange Diamond Block</entry>
+<entry key = "itemGroup.tabEDM_Blocks">EDM Blocks</entry>
+<entry key ="itemGroup.tabEDM_Items">EDM Items</entry>
+<entry key = "itemGroup.mod_beta">EDM Tab</entry>
+<entry key = "item.Item_Black_diamond.name">Black Diamond</entry>
+<entry key = "item.Item_Blue_diamond.name">Blue Diamond</entry>
+<entry key = "item.Item_green_diamond.name">Green Diamond</entry>
+<entry key = "item.Item_Gray_diamond.name">Gray Diamond</entry>
+<entry key = "item.Item_Orange_diamond.name">Orange Diamond</entry>
+<entry key = "item.Item_Pink_diamond.name">Pink Diamond</entry>
+</properties>
+

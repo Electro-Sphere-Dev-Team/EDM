@@ -1,0 +1,13 @@
+﻿# EDM's Language File = UNITED STATES ENGLISH
+
+# ITEMS
+item.itemCarpentersHammer.name=Carpenter's Hammer
+item.itemCarpentersChisel.name=Carpenter's Chisel
+item.itemCarpentersDoor.name=Carpenter's Door
+item.itemCarpentersBed.name=Carpenter's Bed
+
+# BLOCKS
+tile.Block.Black.name=Black Diamond Block
+tile.Block.Blue.name=Blue Diamond Block
+tile.Block.Gold.name=Gold Diamond Block
+# </file>
