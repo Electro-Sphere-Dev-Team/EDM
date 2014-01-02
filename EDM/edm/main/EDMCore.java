@@ -21,7 +21,7 @@ import cpw.mods.fml.common.network.NetworkMod;
 import cpw.mods.fml.common.versioning.ArtifactVersion;
 import cpw.mods.fml.common.versioning.VersionRange;
 
-@Mod(modid = Library.modID, name= Library.Name, version="6.0.0", dependencies="required-after:Forge@[9.11.1.953,)")
+@Mod(modid = Library.modID, name= Library.Name, version="3.0.0", dependencies="required-after:Forge@[9.11.1.953,)")
 @NetworkMod(clientSideRequired=true,serverSideRequired=false)
 
 public class EDMCore extends DummyModContainer
