@@ -5,7 +5,7 @@ public class Library
 	public static final String PreFix= "EDM:";
 	public static final String modID = " Extra_Diamonds_Mod";
 	public static final String Name = PreFix +"Core";
-	public static final String Version = "Pre-6.0.0";
+	public static final String Version = "Pre-3.0.0";
 	
 	
 	private Library() 
