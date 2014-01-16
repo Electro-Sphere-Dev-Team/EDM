@@ -14,6 +14,7 @@ import com.google.common.eventbus.EventBus;
 import net.minecraft.block.Block;
 import static net.minecraft.block.Block.*;
 import net.minecraft.block.material.Material;
+import net.minecraft.world.World;
 import cpw.mods.fml.common.*;
 import cpw.mods.fml.common.Mod.*;
 import cpw.mods.fml.common.event.*;
@@ -42,6 +43,7 @@ public class EDMCore extends DummyModContainer
 	@EventHandler
 	public static void load(FMLInitializationEvent event)
 	{
+		
 		proxy.Load();
 	}
 	
