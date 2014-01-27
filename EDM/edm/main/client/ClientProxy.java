@@ -3,7 +3,10 @@ package EDM.edm.main.client;
 import net.minecraft.block.Block;
 import net.minecraft.item.ItemStack;
 import cpw.mods.fml.common.Loader;
+import cpw.mods.fml.common.registry.LanguageRegistry;
+import EDM.edm.main.EDMCore;
 import EDM.edm.main.api.BTMAPI;
+import EDM.edm.main.creativetabs.EDMBlocksTab;
 import EDM.edm.main.handler.BlockHandler;
 import EDM.edm.main.handler.ItemHandler;
 import EDM.edm.main.handler.ToolHandler;
@@ -13,10 +16,14 @@ public class ClientProxy
 
 	public static void Load()
 	{
+		EDMCore.tabEDMBlocks = new EDMBlocksTab("EDM:Blocks");
+		
 		ClientProxy.HandleBlock();
 		ClientProxy.HandleItem();
 		ClientProxy.HandleAddons();
 		ClientProxy.HandleTools();
+		
+		LanguageRegistry.instance().addStringLocalization("itemGroup.EDM:Blocks", "EDM:Blocks");
 		
 	}
 	public static boolean HandleAddons()

@@ -12,7 +12,7 @@ public class BTMAPI
         {
                 try
                 {
-                        return Class.forName("bcblocks.bettertable.table.BetterCraftingManager.class");
+                        return Class.forName("bcblocks.bettertable.table.BetterCraftingManager");
                 }
                 catch(ClassNotFoundException e)
                 {

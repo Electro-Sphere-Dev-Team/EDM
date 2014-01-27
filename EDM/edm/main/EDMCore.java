@@ -7,18 +7,22 @@ import java.util.Map;
 import java.util.Set;
 
 import EDM.edm.main.client.ClientProxy;
+import EDM.edm.main.creativetabs.EDMBlocksTab;
 import EDM.edm.main.lib.Library;
+import EDM.edm.main.world.WorldGenerator;
 
 import com.google.common.eventbus.EventBus;
 
 import net.minecraft.block.Block;
 import static net.minecraft.block.Block.*;
 import net.minecraft.block.material.Material;
+import net.minecraft.creativetab.CreativeTabs;
 import net.minecraft.world.World;
 import cpw.mods.fml.common.*;
 import cpw.mods.fml.common.Mod.*;
 import cpw.mods.fml.common.event.*;
 import cpw.mods.fml.common.network.NetworkMod;
+import cpw.mods.fml.common.registry.GameRegistry;
 import cpw.mods.fml.common.versioning.ArtifactVersion;
 import cpw.mods.fml.common.versioning.VersionRange;
 
@@ -27,6 +31,7 @@ import cpw.mods.fml.common.versioning.VersionRange;
 
 public class EDMCore extends DummyModContainer
 {
+	public static CreativeTabs tabEDMBlocks;
 	
 	@Instance("EDMCore")
 	public EDMCore instance;
@@ -43,8 +48,9 @@ public class EDMCore extends DummyModContainer
 	@EventHandler
 	public static void load(FMLInitializationEvent event)
 	{
-		
+		GameRegistry.registerWorldGenerator(new WorldGenerator());
 		proxy.Load();
+		
 	}
 	
 	@EventHandler

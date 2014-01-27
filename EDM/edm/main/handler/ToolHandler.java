@@ -31,7 +31,7 @@ public class ToolHandler
 		
 		Black_Shovel= new ItemSpadeMain(17002, EnumToolMaterials.Black).setUnlocalizedName("Black_Diamond_Shovel").setTextureName("mod_beta:"+"Black_Diamond_Shovel");
 		
-		Black_Sword= new ItemSwordBlack(0, EnumToolMaterials.Black);
+		Black_Sword= new ItemSwordBlack(17003, EnumToolMaterials.Black);
 		
 		//Pickaxes
 		LanguageRegistry.addName(Black_Pickaxe, "Black Diamond Pickaxe");
