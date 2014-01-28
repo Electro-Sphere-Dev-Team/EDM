@@ -7,7 +7,7 @@ import java.util.Map;
 import java.util.Set;
 
 import EDM.edm.main.client.ClientProxy;
-import EDM.edm.main.creativetabs.EDMBlocksTab;
+import EDM.edm.main.handler.config.ConfigCore;
 import EDM.edm.main.lib.Library;
 import EDM.edm.main.world.WorldGenerator;
 
@@ -42,7 +42,8 @@ public class EDMCore extends DummyModContainer
 	@EventHandler
 	public static void preload(FMLPreInitializationEvent event)
 	{
-	
+		ConfigCore.loadConfig(event);
+		
 	}
 	
 	@EventHandler

@@ -5,10 +5,10 @@ import net.minecraft.creativetab.CreativeTabs;
 import cpw.mods.fml.relauncher.Side;
 import cpw.mods.fml.relauncher.SideOnly;
 
-public class EDMBlocksTab extends CreativeTabs 
+public class MainTab extends CreativeTabs 
 {
 
-        public EDMBlocksTab(String label) 
+        public MainTab(String label) 
         {
                 super(label);
         }
