@@ -14,7 +14,9 @@ public class BlockHandler {
 	
 	public static void RegisterBlocks()
 	{
-		 Black_B = new Block_Black(4050, Material.rock).setUnlocalizedName("Black_diamond_Block").setHardness(2.0F).setResistance(5.0F).setCreativeTab(EDMCore.tabEDMBlocks).setTextureName("mod_beta:"+ "Black_diamond_Block");;
+		 Black_B = new Block_Black(4050, Material.rock).setUnlocalizedName("Black_diamond_Block").setHardness(2.0F).setResistance(5.0F).setCreativeTab(EDMCore.tabEDMBlocks)
+				 /*TODO remove after testing*/
+				/**/.setLightValue(4.0F)/**/.setTextureName("mod_beta:"+ "Black_diamond_Block");;
 		 
 		 Blue_B = new Block_Blue(4051, Material.rock).setUnlocalizedName("Blue_diamond_Block").setHardness(2.0F).setResistance(5.0F).setCreativeTab(EDMCore.tabEDMBlocks).setTextureName("mod_beta:"+ "Blue_diamond_Block");;
 		 

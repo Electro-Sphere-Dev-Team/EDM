@@ -35,7 +35,8 @@ public class WorldGenerator implements IWorldGenerator {
         	int firstBlockYCoord = rand.nextInt(64);
         	int firstBlockZCoord = chunkZ + rand.nextInt(20);
         	
-        	(new WorldGenMinable(BlockAPI.Blue_B.blockID, 2)).generate(world, rand, firstBlockXCoord, firstBlockYCoord, firstBlockZCoord);
+        	(new WorldGenMinable(BlockAPI.Black_B.blockID, 3)).generate(world, rand, firstBlockXCoord, firstBlockYCoord, firstBlockZCoord);
+        	(new WorldGenMinable(BlockAPI.Blue_B.blockID, 3)).generate(world, rand, firstBlockXCoord, firstBlockYCoord, firstBlockZCoord);
         }
 	}
 
