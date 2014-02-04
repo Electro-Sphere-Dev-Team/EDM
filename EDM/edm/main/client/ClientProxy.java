@@ -7,6 +7,7 @@ import cpw.mods.fml.common.registry.LanguageRegistry;
 import EDM.edm.main.EDMCore;
 import EDM.edm.main.api.BTMAPI;
 import EDM.edm.main.creativetabs.MainTab;
+import EDM.edm.main.handler.ArmorHandler;
 import EDM.edm.main.handler.BlockHandler;
 import EDM.edm.main.handler.ItemHandler;
 import EDM.edm.main.handler.ToolHandler;
@@ -22,6 +23,7 @@ public class ClientProxy
 		ClientProxy.HandleItem();
 		ClientProxy.HandleAddons();
 		ClientProxy.HandleTools();
+		ClientProxy.HandleArmor();
 		
 		LanguageRegistry.instance().addStringLocalization("itemGroup.EDM:Blocks", "EDM:Blocks");
 		
@@ -58,5 +60,10 @@ public class ClientProxy
 	public static void HandleTools()
 	{
 		ToolHandler.handleTools();
+	}
+	public static void HandleArmor()
+	{
+		ArmorHandler.RegisterArmor();
+		ArmorHandler.ArmorToGame();
 	}
 }
