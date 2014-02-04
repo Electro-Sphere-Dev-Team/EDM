@@ -9,8 +9,8 @@ public class Library
 	
 	public static String Main="3";
 	public static String rev="1";
-	public static String api="3";
-	public static String build="Build 7";
+	public static String api="4";
+	public static String build="Build 8";
 
 	private Library() 
 	{
