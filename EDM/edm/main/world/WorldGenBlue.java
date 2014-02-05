@@ -33,7 +33,7 @@ public class WorldGenBlue implements IWorldGenerator {
 	private void generateSurface(World world, Random rand, int chunkX, int chunkZ) {
         for(int k = 0; k < 10; k++){
         	int firstBlockXCoord = chunkX + rand.nextInt(16);
-        	int firstBlockYCoord = rand.nextInt(64);
+        	int firstBlockYCoord = rand.nextInt(30);
         	int firstBlockZCoord = chunkZ + rand.nextInt(16);
         	
         	(new WorldGenMinable(OreAPI.Blue_O.blockID, 7)).generate(world, rand, firstBlockXCoord, firstBlockYCoord, firstBlockZCoord);
