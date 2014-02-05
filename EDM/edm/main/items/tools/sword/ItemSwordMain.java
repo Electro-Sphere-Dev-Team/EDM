@@ -5,6 +5,7 @@ import net.minecraft.block.material.Material;
 import net.minecraft.creativetab.CreativeTabs;
 import net.minecraft.entity.Entity;
 import net.minecraft.entity.EntityLiving;
+import net.minecraft.entity.EntityLivingBase;
 import net.minecraft.entity.SharedMonsterAttributes;
 import net.minecraft.entity.ai.attributes.AttributeModifier;
 import net.minecraft.entity.player.EntityPlayer;
@@ -37,33 +38,38 @@ public class ItemSwordMain extends Item
 	}
 	
 	public float getStrVsBlock(ItemStack par1ItemStack, Block par2Block)
-	{
-         if (par2Block.blockID == Block.web.blockID){
-                 return 15.0F;
-         } else {
-                 Material var3 = par2Block.blockMaterial;
-                 return var3 
-                		 != Material.plants && var3 
-                		 != Material.vine && var3 
-                		 != Material.coral && var3 
-                		 != Material.leaves && var3 
-                		 != Material.pumpkin ? 1.0F : 1.5F;
-         }
-	}
-	
-	public boolean hitEntity(ItemStack par1ItemStack, EntityLiving par2EntityLiving, EntityLiving par3EntityLiving)
-	{
-         par1ItemStack.damageItem(1, par3EntityLiving);
-         return true;
-	}
-	
-	public boolean onBlockDestroyed(ItemStack par1ItemStack, World par2World, int par3, int par4, int par5, int par6, EntityLiving par7EntityLiving)
-	{
-		if ((double)Block.blocksList[par3].getBlockHardness(par2World, par4, par5, par6) != 0.0D){
-                 par1ItemStack.damageItem(2, par7EntityLiving);
-         }
-         return true;
-	}
+    {
+        if (par2Block.blockID == Block.web.blockID)
+        {
+            return 15.0F;
+        }
+        else
+        {
+            Material material = par2Block.blockMaterial;
+            return material != Material.plants && material != Material.vine && material != Material.coral && material != Material.leaves && material != Material.pumpkin ? 1.0F : 1.5F;
+        }
+    }
+
+    /**
+     * Current implementations of this method in child classes do not use the entry argument beside ev. They just raise
+     * the damage on the stack.
+     */
+    public boolean hitEntity(ItemStack par1ItemStack, EntityLivingBase par2EntityLivingBase, EntityLivingBase par3EntityLivingBase)
+    {
+        par1ItemStack.damageItem(1, par3EntityLivingBase);
+        return true;
+    }
+
+    public boolean onBlockDestroyed(ItemStack par1ItemStack, World par2World, int par3, int par4, int par5, int par6, EntityLivingBase par7EntityLivingBase)
+    {
+        if ((double)Block.blocksList[par3].getBlockHardness(par2World, par4, par5, par6) != 0.0D)
+        {
+            par1ItemStack.damageItem(2, par7EntityLivingBase);
+        }
+
+        return true;
+    }
+
 	
 	public float getDamageVsEntity(Entity par1Entity)
 	{
@@ -86,11 +92,11 @@ public class ItemSwordMain extends Item
 	}
 	
 	public ItemStack onItemRightClick(ItemStack par1ItemStack, World par2World, EntityPlayer par3EntityPlayer)
-	{
-         par3EntityPlayer.setItemInUse(par1ItemStack, this.getMaxItemUseDuration(par1ItemStack));
-         return par1ItemStack;
-	}
-	
+    {
+        par3EntityPlayer.setItemInUse(par1ItemStack, this.getMaxItemUseDuration(par1ItemStack));
+        return par1ItemStack;
+    }
+
 	public boolean canHarvestBlock(Block par1Block)
 	{
          return par1Block.blockID == Block.web.blockID;

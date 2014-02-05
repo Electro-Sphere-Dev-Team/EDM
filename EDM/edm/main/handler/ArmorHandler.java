@@ -52,6 +52,10 @@ public class ArmorHandler {
 		LanguageRegistry.addName(Gray_L,"Gray Diamond Legs");
 		LanguageRegistry.addName(Gray_B,"Gray Diamond Boots");
 
+		LanguageRegistry.addName(Green_H,"Green Diamond Helmat");
+		LanguageRegistry.addName(Green_C,"Green Diamond Chest");
+		LanguageRegistry.addName(Green_L,"Green Diamond Legs");
+		LanguageRegistry.addName(Green_B,"Green Diamond Boots");
 
 	}
 	

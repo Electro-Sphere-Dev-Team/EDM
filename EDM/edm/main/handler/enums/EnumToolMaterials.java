@@ -5,9 +5,9 @@ import EDM.edm.main.api.ItemAPI;
 
 public enum EnumToolMaterials
 {
-	Black( 6, 1000 , 6.0F , 4, 10),
-	Blue ( 8, 1500 , 8.0F , 6, 12),
-	Gray( 10, 2000 , 10.0F , 8, 14);
+	Black( 3, 1000 , 6.0F , 3.0F, 10),
+	Blue ( 3, 1500 , 8.0F , 3.0F, 12),
+	Gray( 3, 2000 , 10.0F , 4.0F, 14);
 
 	private final int harvestLevel;
 	private final int maxUses;
@@ -16,7 +16,7 @@ public enum EnumToolMaterials
 	private final int enchantability;
 	public Item customCraftingMaterial = null;
 	
-	private EnumToolMaterials(int par3, int par4, float par5, int par6, int par7)
+	private EnumToolMaterials(int par3, int par4, float par5, float par6, int par7)
 	{
          this.harvestLevel = par3;
          this.maxUses = par4;

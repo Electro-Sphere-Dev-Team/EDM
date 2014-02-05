@@ -6,6 +6,7 @@ import net.minecraft.block.Block;
 import net.minecraft.creativetab.CreativeTabs;
 import net.minecraft.entity.Entity;
 import net.minecraft.entity.EntityLiving;
+import net.minecraft.entity.EntityLivingBase;
 import net.minecraft.entity.SharedMonsterAttributes;
 import net.minecraft.entity.ai.attributes.AttributeModifier;
 import net.minecraft.item.Item;
@@ -47,12 +48,16 @@ public class ItemToolMain extends Item{
          return true;
 	}
 	
-	public boolean onBlockDestroyed(ItemStack par1ItemStack, World par2World, int par3, int par4, int par5, int par6, EntityLiving par7EntityLiving){
-         if ((double)Block.blocksList[par3].getBlockHardness(par2World, par4, par5, par6) != 0.0D){
-                 par1ItemStack.damageItem(1, par7EntityLiving);
-         }
-         return true;
-	}
+	 public boolean onBlockDestroyed(ItemStack par1ItemStack, World par2World, int par3, int par4, int par5, int par6, EntityLivingBase par7EntityLivingBase)
+	    {
+	        if ((double)Block.blocksList[par3].getBlockHardness(par2World, par4, par5, par6) != 0.0D)
+	        {
+	            par1ItemStack.damageItem(1, par7EntityLivingBase);
+	        }
+
+	        return true;
+	    }
+
 	public Multimap getItemAttributeModifiers()
     {
         Multimap multimap = super.getItemAttributeModifiers();

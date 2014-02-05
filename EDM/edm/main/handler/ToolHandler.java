@@ -36,15 +36,15 @@ public class ToolHandler
 		LanguageRegistry.addName(Black_Shovel, "Black Diamond Shovel");
 		LanguageRegistry.addName(Black_Sword, "Black Diamond Sword");
 		
-		LanguageRegistry.addName(Blue_Pickaxe, "Black Diamond Pickaxe");
-		LanguageRegistry.addName(Blue_Axe, "Black Diamond Axe");
-		LanguageRegistry.addName(Blue_Shovel, "Black Diamond Shovel");
-		LanguageRegistry.addName(Blue_Sword, "Black Diamond Sword");
+		LanguageRegistry.addName(Blue_Pickaxe, "Blue Diamond Pickaxe");
+		LanguageRegistry.addName(Blue_Axe, "Blue Diamond Axe");
+		LanguageRegistry.addName(Blue_Shovel, "Blue Diamond Shovel");
+		LanguageRegistry.addName(Blue_Sword, "Blue Diamond Sword");
 		
-		LanguageRegistry.addName(Gray_Pickaxe, "Black Diamond Pickaxe");
-		LanguageRegistry.addName(Gray_Axe, "Black Diamond Axe");
-		LanguageRegistry.addName(Gray_Shovel, "Black Diamond Shovel");
-		LanguageRegistry.addName(Gray_Sword, "Black Diamond Sword");
+		LanguageRegistry.addName(Gray_Pickaxe, "Gray Diamond Pickaxe");
+		LanguageRegistry.addName(Gray_Axe, "Gray Diamond Axe");
+		LanguageRegistry.addName(Gray_Shovel, "Gray Diamond Shovel");
+		LanguageRegistry.addName(Gray_Sword, "Gray Diamond Sword");
 		
 	}
 }
