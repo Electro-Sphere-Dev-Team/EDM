@@ -15,13 +15,13 @@ import net.minecraft.world.World;
 import EDM.edm.main.handler.enums.EnumToolMaterials;
 import com.google.common.collect.Multimap;
 
-public class ItemSwordBlack extends Item
+public class ItemSwordMain extends Item
 {
 	
 	private float weaponDamage;
 	private final EnumToolMaterials toolMaterials;
 	
-	public ItemSwordBlack(int par1, EnumToolMaterials par2EnumToolMaterials)
+	public ItemSwordMain(int par1, EnumToolMaterials par2EnumToolMaterials)
 	{
          super(par1);
          this.toolMaterials = par2EnumToolMaterials;

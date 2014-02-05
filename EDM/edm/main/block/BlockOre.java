@@ -2,6 +2,7 @@ package EDM.edm.main.block;
 
 import java.util.Random;
 
+import EDM.edm.main.EDMCore;
 import EDM.edm.main.api.ItemAPI;
 import EDM.edm.main.api.OreAPI;
 
@@ -17,7 +18,7 @@ public class BlockOre extends Block
     public BlockOre(int par1)
     {
         super(par1, Material.rock);
-        this.setCreativeTab(CreativeTabs.tabBlock);
+        this.setCreativeTab(EDMCore.tabEDMBlocks);
     }
 
     @Override
