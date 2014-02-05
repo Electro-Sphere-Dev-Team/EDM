@@ -1,9 +1,13 @@
 package EDM.edm.main.items.tools;
 
+import com.google.common.collect.Multimap;
+
 import net.minecraft.block.Block;
 import net.minecraft.creativetab.CreativeTabs;
 import net.minecraft.entity.Entity;
 import net.minecraft.entity.EntityLiving;
+import net.minecraft.entity.SharedMonsterAttributes;
+import net.minecraft.entity.ai.attributes.AttributeModifier;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
 import net.minecraft.world.World;
@@ -49,7 +53,12 @@ public class ItemToolMain extends Item{
          }
          return true;
 	}
-	
+	public Multimap getItemAttributeModifiers()
+    {
+        Multimap multimap = super.getItemAttributeModifiers();
+        multimap.put(SharedMonsterAttributes.attackDamage.getAttributeUnlocalizedName(), new AttributeModifier(field_111210_e, "Tool modifier", (double)this.damageVsEntity, 0));
+        return multimap;
+    }
 	public float getDamageVsEntity(Entity par1Entity)
 	{
          return this.damageVsEntity;

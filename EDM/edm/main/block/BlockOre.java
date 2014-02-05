@@ -32,19 +32,19 @@ public class BlockOre extends Block
             {
                 j1 = MathHelper.getRandomIntegerInRange(par1World.rand, 0, 2);
             }
-            else if (this.blockID == Block.oreDiamond.blockID)
+            else if (this.blockID == OreAPI.Blue_O.blockID)
             {
                 j1 = MathHelper.getRandomIntegerInRange(par1World.rand, 3, 7);
             }
-            else if (this.blockID == Block.oreEmerald.blockID)
+            else if (this.blockID == OreAPI.Gray_O.blockID)
             {
                 j1 = MathHelper.getRandomIntegerInRange(par1World.rand, 3, 7);
             }
-            else if (this.blockID == Block.oreLapis.blockID)
+            else if (this.blockID == OreAPI.Green_O.blockID)
             {
                 j1 = MathHelper.getRandomIntegerInRange(par1World.rand, 2, 5);
             }
-            else if (this.blockID == Block.oreNetherQuartz.blockID)
+            else if (this.blockID == OreAPI.Orange_O.blockID)
             {
                 j1 = MathHelper.getRandomIntegerInRange(par1World.rand, 2, 5);
             }

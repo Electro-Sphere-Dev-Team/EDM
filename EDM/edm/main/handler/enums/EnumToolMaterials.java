@@ -5,8 +5,9 @@ import EDM.edm.main.api.ItemAPI;
 
 public enum EnumToolMaterials
 {
-	Black( 3, 1000 , 10.0F , 10, 15),
-	Blue ( 3, 1500 , 15.0F , 15, 20);
+	Black( 6, 1000 , 6.0F , 4, 10),
+	Blue ( 8, 1500 , 8.0F , 6, 12),
+	Gray( 10, 2000 , 10.0F , 8, 14);
 
 	private final int harvestLevel;
 	private final int maxUses;

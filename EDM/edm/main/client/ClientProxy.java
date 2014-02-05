@@ -40,8 +40,11 @@ public class ClientProxy
 	}
 	public static void HandleArmorMaterials()
 	{
-		ArmorMaterialAPI.Black_Diamonds = EnumHelper.addArmorMaterial("Black", 30, new int[] { 1, 6, 4, 1 }, 10);
-		ArmorMaterialAPI.Blue_Diamonds = EnumHelper.addArmorMaterial("Blue", 35, new int[] { 3, 8, 6, 3 }, 15);
+		ArmorMaterialAPI.Black_Diamonds = EnumHelper.addArmorMaterial("Black", 30,new int[] { 1, 6, 4, 1 }, 10);
+		 ArmorMaterialAPI.Blue_Diamonds = EnumHelper.addArmorMaterial("Blue", 35, new int[] { 3, 8, 6, 3 }, 15);
+		 ArmorMaterialAPI.Gray_Diamonds = EnumHelper.addArmorMaterial("Gray", 40, new int[] { 5, 10,8, 5 }, 20);
+		ArmorMaterialAPI.Green_Diamonds= EnumHelper.addArmorMaterial("Green", 45, new int[] { 7, 12,10,7 }, 25);
+
 	}
 	public static boolean HandleAddons()
 	{
