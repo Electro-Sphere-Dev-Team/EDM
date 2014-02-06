@@ -5,9 +5,9 @@ import net.minecraft.block.material.Material;
 
 public class Block_Black extends Block{
 
-	public Block_Black(int par1, Material par2Material) 
+	public Block_Black() 
 	{
-		super(par1, par2Material);
+		super(4050, Material.rock);
 	
 	}
 }

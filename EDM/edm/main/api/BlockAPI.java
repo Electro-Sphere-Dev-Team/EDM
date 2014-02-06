@@ -3,7 +3,6 @@ package EDM.edm.main.api;
 import net.minecraft.block.Block;
 
 public class BlockAPI {
-
 	public static Block Black_B;
 	public static Block Blue_B;
 	public static Block Gold_B;

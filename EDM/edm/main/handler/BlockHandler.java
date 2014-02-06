@@ -4,6 +4,7 @@ import net.minecraft.block.Block;
 import net.minecraft.block.material.Material;
 import net.minecraft.creativetab.CreativeTabs;
 import EDM.edm.main.EDMCore;
+import EDM.edm.main.api.BlockAPI;
 import EDM.edm.main.block.*;
 import static EDM.edm.main.api.BlockAPI.*;
 import cpw.mods.fml.common.registry.*;
@@ -14,13 +15,11 @@ public class BlockHandler {
 	
 	public static void RegisterBlocks()
 	{
-		 Black_B = new Block_Black(4050, Material.rock).setUnlocalizedName("Black_diamond_Block").setHardness(2.0F).setResistance(5.0F).setCreativeTab(EDMCore.tabEDMBlocks)
-				 /*TODO remove after testing*/
-				/**/.setLightValue(4.0F)/**/.setTextureName("mod_beta:"+ "Black_diamond_Block");;
+		 Black_B = new Block_Black().setUnlocalizedName("Black_diamond_Block").setHardness(2.0F).setResistance(5.0F).setCreativeTab(EDMCore.tabEDMBlocks).setLightValue(4.0F).setTextureName("mod_beta:"+ "Black_diamond_Block");
 		 
-		 Blue_B = new Block_Blue(4051, Material.rock).setUnlocalizedName("Blue_diamond_Block").setHardness(2.0F).setResistance(5.0F).setCreativeTab(EDMCore.tabEDMBlocks).setTextureName("mod_beta:"+ "Blue_diamond_Block");;
+		 Blue_B = new Block_Blue().setUnlocalizedName("Blue_diamond_Block").setHardness(2.0F).setResistance(5.0F).setCreativeTab(EDMCore.tabEDMBlocks).setTextureName("mod_beta:"+ "Blue_diamond_Block");;
 		 
-		 Gold_B= new Block_Gold(4052, Material.rock).setUnlocalizedName("Gold_diamond_Block").setHardness(2.0F).setResistance(5.0F).setCreativeTab(EDMCore.tabEDMBlocks).setTextureName("mod_beta:"+ "Gold_diamond_Block");
+		 Gold_B= new Block_Gold().setUnlocalizedName("Gold_diamond_Block").setHardness(2.0F).setResistance(5.0F).setCreativeTab(EDMCore.tabEDMBlocks).setTextureName("mod_beta:"+ "Gold_diamond_Block");
 		 
 		 Gray_B= new Block_Gray(4053, Material.rock).setUnlocalizedName("Gray_diamond_Block").setHardness(2.0F).setResistance(5.0F).setCreativeTab(EDMCore.tabEDMBlocks).setTextureName("mod_beta:"+ "Gray_diamond_Block");
 		 
