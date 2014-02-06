@@ -1,5 +1,6 @@
 package EDM.edm.main;
 
+import java.io.File;
 import java.util.Arrays;
 import java.util.HashMap;
 import java.util.Map;
@@ -7,6 +8,7 @@ import java.util.Map;
 import net.minecraft.creativetab.CreativeTabs;
 import EDM.edm.main.client.ClientProxy;
 import EDM.edm.main.handler.config.ConfigCore;
+import EDM.edm.main.helper.CheckVersion;
 import EDM.edm.main.lib.Library;
 import EDM.edm.main.world.WorldGenBlack;
 import cpw.mods.fml.common.DummyModContainer;
@@ -47,10 +49,14 @@ public class EDMCore extends DummyModContainer
 			meta.name = Library.Name;
 			meta.version = Library.Version;
 			meta.description = "";
-	    
-		ConfigCore.loadConfig(event);
-		
+			
+			ConfigCore.loadConfig(new File(event.getModConfigurationDirectory(), Library.ConfigPath));
+
+			new CheckVersion();
+			
 	}
+		
+	
 	
 	@EventHandler
 	public static void load(FMLInitializationEvent event)
