@@ -41,6 +41,7 @@ public class BlockHandler {
 	
 	public static void BlockToGame()
 	{
+		/*
 		GameRegistry.registerBlock(Black_B, "Black_diamond_Block");
 		LanguageRegistry.addName(Black_B, "Black Diamond Block");
 		
@@ -73,6 +74,6 @@ public class BlockHandler {
 		
 		GameRegistry.registerBlock(Yellow_B, "Yellow_diamond_Block1");
 		LanguageRegistry.addName(Yellow_B, "Yellow Diamond Block");
-		
+	*/	
 	}
 }
