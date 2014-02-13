@@ -8,9 +8,10 @@ import EDM.edm.main.items.tools.ItemToolMain;
 	
 public class ItemPickaxeMain extends ItemToolMain{
 
-		public ItemPickaxeMain(int par1, EnumToolMaterials par2EnumToolMaterial)
+		public ItemPickaxeMain(int par1, EnumToolMaterials par2EnumToolMaterial, String name)
 		{
-	         super(par1, 2, par2EnumToolMaterial, blocksEffectiveAgainst);
+	         super(par1, 2, par2EnumToolMaterial, blocksEffectiveAgainst, name);
+	         this.setTextureName("mod_beta"+":"+name);
 	    }
 		private static Block[] blocksEffectiveAgainst = new Block[] 
 		{

@@ -15,36 +15,30 @@ public class ToolHandler
 	public static void handleTools()
 	{
 		//Black Diamond
-		Black_Pickaxe = new ItemPickaxeMain(17000, EnumToolMaterials.Black).setCreativeTab(CreativeTabs.tabTools).setUnlocalizedName("Black_Diamond_Pick").setTextureName("mod_beta:Black_Diamond_Pick");
-		Black_Axe= new ItemAxeMain(17001,EnumToolMaterials.Black).setCreativeTab(CreativeTabs.tabTools).setUnlocalizedName("Black_Diamond_Axe").setTextureName("mod_beta:Black_Diamond_Axe");
-		Black_Shovel= new ItemSpadeMain(17002, EnumToolMaterials.Black).setCreativeTab(CreativeTabs.tabTools).setUnlocalizedName("Black_Diamond_Shovel").setTextureName("mod_beta:Black_Diamond_Shovel");
-		Black_Sword= new ItemSwordMain(17003, EnumToolMaterials.Black).setCreativeTab(CreativeTabs.tabTools).setUnlocalizedName("Black_Diamond_Sword").setTextureName("mod_beta:Black_Diamond_Sword");
+		new ItemPickaxeMain(17000, EnumToolMaterials.Black, "Black_Diamond_Pick").setCreativeTab(CreativeTabs.tabTools);
+		new ItemAxeMain(17001,EnumToolMaterials.Black, "Black_Diamond_Axe").setCreativeTab(CreativeTabs.tabTools);
+		new ItemSpadeMain(17002, EnumToolMaterials.Black, "Black_Diamond_Shovel").setCreativeTab(CreativeTabs.tabTools);
+		new ItemSwordMain(17003, EnumToolMaterials.Black,"Black_Diamond_Sword").setCreativeTab(CreativeTabs.tabTools);
 		//Blue Diamond
-		Blue_Pickaxe = new ItemPickaxeMain(17004, EnumToolMaterials.Blue).setCreativeTab(CreativeTabs.tabTools).setUnlocalizedName("Blue_Diamond_Pick").setTextureName("mod_beta:Blue_Diamond_Pick");
-		Blue_Axe= new ItemAxeMain(17005,EnumToolMaterials.Blue).setCreativeTab(CreativeTabs.tabTools).setUnlocalizedName("Blue_Diamond_Axe").setTextureName("mod_beta:Blue_Diamond_Axe");
-		Blue_Shovel= new ItemSpadeMain(17006, EnumToolMaterials.Blue).setCreativeTab(CreativeTabs.tabTools).setUnlocalizedName("Blue_Diamond_Shovel").setTextureName("mod_beta:Blue_Diamond_Shovel");
-		Blue_Sword= new ItemSwordMain(17007, EnumToolMaterials.Blue).setCreativeTab(CreativeTabs.tabTools).setUnlocalizedName("Blue_Diamond_Sword").setTextureName("mod_beta:Blue_Diamond_Sword");
-		
+		new ItemPickaxeMain(17004, EnumToolMaterials.Blue, "Blue_Diamond_Pick").setCreativeTab(CreativeTabs.tabTools);
+		new ItemAxeMain(17005,EnumToolMaterials.Blue, "Blue_Diamond_Axe").setCreativeTab(CreativeTabs.tabTools);
+		new ItemSpadeMain(17006, EnumToolMaterials.Blue, "Blue_Diamond_Shovel").setCreativeTab(CreativeTabs.tabTools);
+		new ItemSwordMain(17007, EnumToolMaterials.Blue,"Blue_Diamond_Sword").setCreativeTab(CreativeTabs.tabTools);
 		//Blue Diamond
-		Gray_Pickaxe = new ItemPickaxeMain(17008, EnumToolMaterials.Gray).setCreativeTab(CreativeTabs.tabTools).setUnlocalizedName("gGay_Diamond_Pick").setTextureName("mod_beta:Gray_Diamond_Pick");
-		Gray_Axe= new ItemAxeMain(17009,EnumToolMaterials.Gray).setCreativeTab(CreativeTabs.tabTools).setUnlocalizedName("Gray_Diamond_Axe").setTextureName("mod_beta:Gray_Diamond_Axe");
-		Gray_Shovel= new ItemSpadeMain(17010, EnumToolMaterials.Gray).setCreativeTab(CreativeTabs.tabTools).setUnlocalizedName("Gray_Diamond_Shovel").setTextureName("mod_beta:Gray_Diamond_Shovel");
-		Gray_Sword= new ItemSwordMain(17011, EnumToolMaterials.Gray).setCreativeTab(CreativeTabs.tabTools).setUnlocalizedName("Gray_Diamond_Sword").setTextureName("mod_beta:Gray_Diamond_Sword");
-				
-		LanguageRegistry.addName(Black_Pickaxe, "Black Diamond Pickaxe");
-		LanguageRegistry.addName(Black_Axe, "Black Diamond Axe");
-		LanguageRegistry.addName(Black_Shovel, "Black Diamond Shovel");
-		LanguageRegistry.addName(Black_Sword, "Black Diamond Sword");
+		new ItemPickaxeMain(17008, EnumToolMaterials.Gray, "Gray_Diamond_Pick").setCreativeTab(CreativeTabs.tabTools);
+		new ItemAxeMain(17009,EnumToolMaterials.Gray, "Gray_Diamond_Axe").setCreativeTab(CreativeTabs.tabTools);
+		new ItemSpadeMain(17010, EnumToolMaterials.Gray, "Gray_Diamond_Shovel").setCreativeTab(CreativeTabs.tabTools);
+		new ItemSwordMain(17011, EnumToolMaterials.Gray,"Gray_Diamond_Sword").setCreativeTab(CreativeTabs.tabTools);
 		
-		LanguageRegistry.addName(Blue_Pickaxe, "Blue Diamond Pickaxe");
-		LanguageRegistry.addName(Blue_Axe, "Blue Diamond Axe");
-		LanguageRegistry.addName(Blue_Shovel, "Blue Diamond Shovel");
-		LanguageRegistry.addName(Blue_Sword, "Blue Diamond Sword");
+		new ItemPickaxeMain(17012, EnumToolMaterials.Gold, "Gold_Diamond_Pick").setCreativeTab(CreativeTabs.tabTools);
+		new ItemAxeMain(17013,EnumToolMaterials.Gold, "Gold_Diamond_Axe").setCreativeTab(CreativeTabs.tabTools);
+		new ItemSpadeMain(17014, EnumToolMaterials.Gold, "Gold_Diamond_Shovel").setCreativeTab(CreativeTabs.tabTools);
+		new ItemSwordMain(17015, EnumToolMaterials.Gold,"Gold_Diamond_Sword").setCreativeTab(CreativeTabs.tabTools);
 		
-		LanguageRegistry.addName(Gray_Pickaxe, "Gray Diamond Pickaxe");
-		LanguageRegistry.addName(Gray_Axe, "Gray Diamond Axe");
-		LanguageRegistry.addName(Gray_Shovel, "Gray Diamond Shovel");
-		LanguageRegistry.addName(Gray_Sword, "Gray Diamond Sword");
+		new ItemPickaxeMain(17016, EnumToolMaterials.Green, "Green_Diamond_Pick").setCreativeTab(CreativeTabs.tabTools);
+		new ItemAxeMain(17017,EnumToolMaterials.Green, "Green_Diamond_Axe").setCreativeTab(CreativeTabs.tabTools);
+		new ItemSpadeMain(17018, EnumToolMaterials.Green, "Green_Diamond_Shovel").setCreativeTab(CreativeTabs.tabTools);
+		new ItemSwordMain(17019, EnumToolMaterials.Green,"Green_Diamond_Sword").setCreativeTab(CreativeTabs.tabTools);
 		
 	}
 }

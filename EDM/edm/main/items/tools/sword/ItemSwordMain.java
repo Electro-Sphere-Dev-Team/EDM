@@ -14,22 +14,25 @@ import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
 import net.minecraft.world.World;
 import EDM.edm.main.handler.enums.EnumToolMaterials;
+import EDM.edm.main.items.ItemCore;
+
 import com.google.common.collect.Multimap;
 
-public class ItemSwordMain extends Item
+public class ItemSwordMain extends ItemCore
 {
 	
 	private float weaponDamage;
 	private final EnumToolMaterials toolMaterials;
 	
-	public ItemSwordMain(int par1, EnumToolMaterials par2EnumToolMaterials)
+	public ItemSwordMain(int par1, EnumToolMaterials par2EnumToolMaterials, String name)
 	{
-         super(par1);
+         super(par1, name);
          this.toolMaterials = par2EnumToolMaterials;
          this.maxStackSize = 1;
          this.setMaxDamage(par2EnumToolMaterials.getMaxUses());
          this.setCreativeTab(CreativeTabs.tabCombat);
          this.weaponDamage = 4.0F + par2EnumToolMaterials.getDamageVsEntity();
+         this.setTextureName("mod_beta"+":"+name);
 	}
 	
 	public float func_82803_g()
@@ -106,13 +109,6 @@ public class ItemSwordMain extends Item
 	{
          return this.toolMaterials.getEnchantability();
 	}
-	/**
-     * Return whether this item is repairable in an anvil.
-     */
-    public boolean getIsRepairable(ItemStack par1ItemStack, ItemStack par2ItemStack)
-    {
-        return this.toolMaterials.getToolCraftingMaterial() == par2ItemStack.itemID ? true : super.getIsRepairable(par1ItemStack, par2ItemStack);
-    }
 
     /**
      * Gets a map of item attribute modifiers, used by ItemSword to increase hit damage.

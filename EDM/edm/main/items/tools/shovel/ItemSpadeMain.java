@@ -24,9 +24,10 @@ public class ItemSpadeMain extends ItemToolMain
 		Block.mycelium
 	};
 	
-	public ItemSpadeMain(int par1, EnumToolMaterials par2EnumToolMaterial)
+	public ItemSpadeMain(int par1, EnumToolMaterials par2EnumToolMaterial, String name)
 	{
-         super(par1, 1, par2EnumToolMaterial, blocksEffectiveAgainst);
+         super(par1, 1, par2EnumToolMaterial, blocksEffectiveAgainst, name);
+         this.setTextureName("mod_beta"+":"+name);
 	}
 	
 	public boolean canHarvestBlock(Block par1Block)

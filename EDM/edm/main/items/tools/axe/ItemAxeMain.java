@@ -20,9 +20,10 @@ public class ItemAxeMain extends ItemToolMain{
 		Block.pumpkinLantern
 	};
 	
-	public ItemAxeMain(int par1, EnumToolMaterials par2EnumToolMaterial)
+	public ItemAxeMain(int par1, EnumToolMaterials par2EnumToolMaterial, String name)
 	{
-         super(par1, 3, par2EnumToolMaterial, blocksEffectiveAgainst);
+         super(par1, 3, par2EnumToolMaterial, blocksEffectiveAgainst, name);
+         this.setTextureName("mod_beta"+":"+name);
 	}
 	
 	public float getStrVsBlock(ItemStack par1ItemStack, Block par2Block)

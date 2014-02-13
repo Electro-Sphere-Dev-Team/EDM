@@ -15,27 +15,18 @@ public class BlockHandler {
 	
 	public static void RegisterBlocks()
 	{
-		 Black_B = new Block_Black().setUnlocalizedName("Black_diamond_Block").setHardness(2.0F).setResistance(5.0F).setCreativeTab(EDMCore.tabEDMBlocks).setLightValue(4.0F).setTextureName("mod_beta:"+ "Black_diamond_Block");
+		 new BlockBase(4050, "Black_diamond_Block").setHardness(2.0F).setResistance(5.0F);
+		 new BlockBase(4051, "Blue_diamond_Block").setHardness(2.0F).setResistance(5.0F);
+		 new BlockBase(4052, "Gold_diamond_Block").setHardness(2.0F).setResistance(5.0F);
+		 new BlockBase(4053, "Gray_diamond_Block").setHardness(2.0F).setResistance(5.0F);
+		 new BlockBase(4054, "Green_diamond_Block").setHardness(2.0F).setResistance(5.0F);
+		 new BlockBase(4055, "Orange_diamond_Block").setHardness(2.0F).setResistance(5.0F);
+		 new BlockBase(4056, "Pink_diamond_Block").setHardness(2.0F).setResistance(5.0F);
+		 new BlockBase(4057, "Purple_diamond_Block").setHardness(2.0F).setResistance(5.0F);
+		 new BlockBase(4058, "White_diamond_Block").setHardness(2.0F).setResistance(5.0F);
+		 new BlockBase(4059, "Yellow_diamond_Block").setHardness(2.0F).setResistance(5.0F);
 		 
-		 Blue_B = new Block_Blue().setUnlocalizedName("Blue_diamond_Block").setHardness(2.0F).setResistance(5.0F).setCreativeTab(EDMCore.tabEDMBlocks).setTextureName("mod_beta:"+ "Blue_diamond_Block");;
-		 
-		 Gold_B= new Block_Gold().setUnlocalizedName("Gold_diamond_Block").setHardness(2.0F).setResistance(5.0F).setCreativeTab(EDMCore.tabEDMBlocks).setTextureName("mod_beta:"+ "Gold_diamond_Block");
-		 
-		 Gray_B= new Block_Gray(4053, Material.rock).setUnlocalizedName("Gray_diamond_Block").setHardness(2.0F).setResistance(5.0F).setCreativeTab(EDMCore.tabEDMBlocks).setTextureName("mod_beta:"+ "Gray_diamond_Block");
-		 
-		 Green_B= new Block_Green(4054, Material.rock).setUnlocalizedName("Green_diamond_Block").setHardness(2.0F).setResistance(5.0F).setCreativeTab(EDMCore.tabEDMBlocks).setTextureName("mod_beta:"+ "Green_diamond_Block");
-		 
-		 Orange_B= new BlockBase(4055, Material.rock).setUnlocalizedName("Orange_diamond_Block").setHardness(2.0F).setResistance(5.0F).setCreativeTab(EDMCore.tabEDMBlocks).setTextureName("mod_beta:"+ "Orange_diamond_Block");
-		 
-		 Pink_B= new BlockBase(4056, Material.rock).setUnlocalizedName("Pink_diamond_Block").setHardness(2.0F).setResistance(5.0F).setCreativeTab(EDMCore.tabEDMBlocks).setTextureName("mod_beta:"+ "Pink_diamond_Block");
-		 
-		 Purple_B= new BlockBase(4057, Material.rock).setUnlocalizedName("Purple_diamond_Block").setHardness(2.0F).setResistance(5.0F).setCreativeTab(EDMCore.tabEDMBlocks).setTextureName("mod_beta:"+ "Purple_diamond_Block");
-		 
-		 Red_B= new BlockBase(4058, Material.rock).setUnlocalizedName("Red_diamond_Block").setHardness(2.0F).setResistance(5.0F).setCreativeTab(EDMCore.tabEDMBlocks).setTextureName("mod_beta:"+ "Red_diamond_Block");
-		 
-		 White_B= new BlockBase(4059, Material.rock).setUnlocalizedName("White_diamond_Block").setHardness(2.0F).setResistance(5.0F).setCreativeTab(EDMCore.tabEDMBlocks).setTextureName("mod_beta:"+ "White_diamond_Block");
-		 
-		 Yellow_B= new BlockBase(4060, Material.rock).setUnlocalizedName("Yellow_diamond_Block").setHardness(2.0F).setResistance(5.0F).setCreativeTab(EDMCore.tabEDMBlocks).setTextureName("mod_beta:"+ "Yellow_diamond_Block");
+	
 	}
 	
 	public static void BlockToGame()

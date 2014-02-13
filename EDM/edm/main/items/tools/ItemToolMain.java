@@ -13,17 +13,18 @@ import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
 import net.minecraft.world.World;
 import EDM.edm.main.handler.enums.EnumToolMaterials;
+import EDM.edm.main.items.ItemCore;
 
-public class ItemToolMain extends Item{
+public class ItemToolMain extends ItemCore{
 
 	private Block[] blocksEffectiveAgainst;
 	protected float efficiencyOnProperMaterial = 4.0F;
 	private float damageVsEntity;
 	protected EnumToolMaterials toolMaterial;
 	
-	protected ItemToolMain(int par1, int par2, EnumToolMaterials par3EnumToolMaterial, Block[] par4ArrayOfBlock)
+	protected ItemToolMain(int par1, int par2, EnumToolMaterials par3EnumToolMaterial, Block[] par4ArrayOfBlock, String name)
 	{
-         super(par1);
+         super(par1, name);
          this.toolMaterial = par3EnumToolMaterial;
          this.blocksEffectiveAgainst = par4ArrayOfBlock;
          this.maxStackSize = 1;
@@ -31,6 +32,7 @@ public class ItemToolMain extends Item{
          this.efficiencyOnProperMaterial = par3EnumToolMaterial.getEfficiencyOnProperMaterial();
          this.damageVsEntity = par2 + par3EnumToolMaterial.getDamageVsEntity();
          this.setCreativeTab(CreativeTabs.tabTools);
+         this.setTextureName("mod_beta"+":"+name);
 	}
 	
 	public float getStrVsBlock(ItemStack par1ItemStack, Block par2Block){

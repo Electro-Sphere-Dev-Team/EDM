@@ -6,8 +6,10 @@ import EDM.edm.main.api.ItemAPI;
 public enum EnumToolMaterials
 {
 	Black( 3, 1000 , 6.0F , 3.0F, 10),
-	Blue ( 3, 1500 , 8.0F , 3.0F, 12),
-	Gray( 3, 2000 , 10.0F , 4.0F, 14);
+	Blue ( 3, 1500 , 8.0F , 5.0F, 12),
+	Gray( 3, 2000 , 10.0F , 7.0F, 14),
+	Gold( 3, 2500 , 12.0F , 9.0F, 16),
+	Green( 3, 3000 , 14.0F , 11.0F, 18);
 
 	private final int harvestLevel;
 	private final int maxUses;
@@ -50,12 +52,5 @@ public enum EnumToolMaterials
          return this.enchantability;
 	}
 	
-	 public int getToolCraftingMaterial()
-	    {
-	        switch (this)
-	        {
-	            case Black:    return ItemAPI.Black.itemID;
-	            default:      return (customCraftingMaterial == null ? 0 : customCraftingMaterial.itemID);
-	        }
-	    }
+	 
 }
