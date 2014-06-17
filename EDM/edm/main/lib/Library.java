@@ -8,7 +8,7 @@ public class Library
 	public static final String Name = PreFix +"Core";
 	public static String TexName = "mod_beta";
 
-	public static final String Version = "Pre-3.4.15";
+	public static final String Version = "Pre-3.1.2";
 	public static final String URL = "http://www.minecraftforum.net/topic/2059368-";
 	public static final String ConfigPath = "/Roborave's Mods/" + modID + ".cfg";
 	private Library() 
